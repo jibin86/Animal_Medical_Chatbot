@@ -30,17 +30,12 @@ def get_bot_message():
     return jsonify({"botMessage": bot_message})  # 답변을 JSON 형태로 반환
 
 
-# def cos_sim(A, B):
-#     return dot(A, B) / (norm(A) * norm(B))
-
-
 def return_answer(question):
     embedding = model.encode(question)
     embedding = embedding.reshape(1, -1)  # 형태 변환: (n,) -> (1, n)
     scores = dot(embeddings, embedding.T) / (norm(embeddings, axis=1) * norm(embedding)).reshape(-1, 1)
     max_score_index = np.argmax(scores)
     return train_data.loc[max_score_index]["answer"]
-
 
 
 if __name__ == "__main__":
