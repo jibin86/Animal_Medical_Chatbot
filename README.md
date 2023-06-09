@@ -7,7 +7,6 @@ The Animal Medical Chatbot is an AI-powered conversational agent designed to pro
 - **Diagnosis Assistance:** Describe animal symptoms, and the chatbot will provide potential diagnoses or recommendations for further veterinary evaluation.
 - **Medical Data Encoding:** The chatbot encodes the input question using a pre-trained language model (XLM-R) to generate high-dimensional sentence embeddings.
 - **Semantic Similarity:** The chatbot calculates the cosine similarity between the encoded question and pre-computed embeddings of the training data to find the most relevant answer.
-- **GPU Acceleration:** Utilizes GPU acceleration for faster encoding and similarity calculations.
 
 ## How It Works
 1. **Data Preparation:** The chatbot loads a dataset of animal medical questions and answers.
