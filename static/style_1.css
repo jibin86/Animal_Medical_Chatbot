@@ -17,7 +17,7 @@ body {
 
 .chat-header {
   padding: 20px;
-  background-color: #3498db;
+  background-color: #22B573;
   color: #fff;
 }
 
@@ -47,7 +47,7 @@ body {
 }
 
 .user-message {
-  background-color: #3498db;
+  background-color: #22B573;
   color: #fff;
   float: right;
   clear: both; /* 추가 */
@@ -72,7 +72,7 @@ body {
 .chat-input button {
   padding: 10px;
   font-size: 16px;
-  background-color: #3498db;
+  background-color: #22B573;
   color: #fff;
   border-radius: 5px;
   border: none;
@@ -81,5 +81,5 @@ body {
 }
 
 .chat-input button:hover {
-  background-color: #2980b9;
+  background-color: #2c9264;
 }
